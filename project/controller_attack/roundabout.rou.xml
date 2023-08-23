@@ -1,0 +1,64 @@
+<routes>
+    <vType id="normal"  laneChangeModel="LC2022"  speedDev="0.15" color="0,1,0" decel="8" accel="10"  maxSpeedLat="0.7" cooperative="0" sigma="0.5" length="5" />
+    <vType id="anomaly"  laneChangeModel="LC2022"  speedDev="0.15"  color="1,0,0" decel="8" accel="10" maxSpeedLat="0.7" cooperative="0" sigma="0.5" length="5" />
+
+    <!-- <flow id="0_normal_0" type="normal" begin="0" end="1000000" probability="0.01" from="E0" to="E3.35"></flow>
+    <flow id="1_normal_0" type="normal" begin="0" end="1000000" probability="0.01" from="E0" to="E3.35"></flow>
+    <flow id="0_normal_1" type="normal" begin="0" end="1000000" probability="0.03" from="E0" to="E2.34"></flow>
+    <flow id="1_normal_1" type="normal" begin="0" end="1000000" probability="0.03" from="E0" to="E2.34"></flow>
+    <flow id="0_normal_2" type="normal" begin="0" end="1000000" probability="0.01" from="E0" to="-E1"></flow>
+    <flow id="1_normal_2" type="normal" begin="0" end="1000000" probability="0.01" from="E0" to="-E1"></flow>
+
+    <flow id="0_normal_3" type="normal" begin="0" end="1000000" probability="0.01" from="-E3.35" to="E2.34"></flow>
+    <flow id="1_normal_3" type="normal" begin="0" end="1000000" probability="0.01" from="-E3.35" to="E2.34"></flow>
+    <flow id="0_normal_4" type="normal" begin="0" end="1000000" probability="0.03" from="-E3.35" to="-E1"></flow>
+    <flow id="1_normal_4" type="normal" begin="0" end="1000000" probability="0.03" from="-E3.35" to="-E1"></flow>
+    <flow id="0_normal_5" type="normal" begin="0" end="1000000" probability="0.01" from="-E3.35" to="-E0"></flow>
+    <flow id="1_normal_5" type="normal" begin="0" end="1000000" probability="0.01" from="-E3.35" to="-E0"></flow>
+
+    <flow id="0_normal_6" type="normal" begin="0" end="1000000" probability="0.01" from="-E2.34" to="-E1"></flow>
+    <flow id="1_normal_6" type="normal" begin="0" end="1000000" probability="0.01" from="-E2.34" to="-E1"></flow>
+    <flow id="0_normal_7" type="normal" begin="0" end="1000000" probability="0.03" from="-E2.34" to="-E0"></flow>
+    <flow id="1_normal_7" type="normal" begin="0" end="1000000" probability="0.03" from="-E2.34" to="-E0"></flow>
+    <flow id="0_normal_8" type="normal" begin="0" end="1000000" probability="0.01" from="-E2.34" to="E3.35"></flow>
+    <flow id="1_normal_8" type="normal" begin="0" end="1000000" probability="0.01" from="-E2.34" to="E3.35"></flow>
+
+    <flow id="0_normal_9" type="normal" begin="0" end="1000000" probability="0.01" from="E1" to="-E0"></flow>
+    <flow id="1_normal_9" type="normal" begin="0" end="1000000" probability="0.01" from="E1" to="-E0"></flow>
+    <flow id="0_normal_10" type="normal" begin="0" end="1000000" probability="0.03" from="E1" to="E3.35"></flow>
+    <flow id="1_normal_10" type="normal" begin="0" end="1000000" probability="0.03" from="E1" to="E3.35"></flow>
+    <flow id="0_normal_11" type="normal" begin="0" end="1000000" probability="0.01" from="E1" to="E2.34"></flow>
+    <flow id="1_normal_11" type="normal" begin="0" end="1000000" probability="0.01" from="E1" to="E2.34"></flow>
+
+
+
+    <flow id="0_anomaly_0" type="anomaly" begin="0" end="1000000" probability="0.0025" from="E0" to="E3.35"></flow>
+    <flow id="1_anomaly_0" type="anomaly" begin="0" end="1000000" probability="0.0025" from="E0" to="E3.35"></flow>
+    <flow id="0_anomaly_1" type="anomaly" begin="0" end="1000000" probability="0.007" from="E0" to="E2.34"></flow>
+    <flow id="1_anomaly_1" type="anomaly" begin="0" end="1000000" probability="0.007" from="E0" to="E2.34"></flow>
+    <flow id="0_anomaly_2" type="anomaly" begin="0" end="1000000" probability="0.0025" from="E0" to="-E1"></flow>
+    <flow id="1_anomaly_2" type="anomaly" begin="0" end="1000000" probability="0.0025" from="E0" to="-E1"></flow>
+
+    <flow id="0_anomaly_3" type="anomaly" begin="0" end="1000000" probability="0.0025" from="-E3.35" to="E2.34"></flow>
+    <flow id="1_anomaly_3" type="anomaly" begin="0" end="1000000" probability="0.0025" from="-E3.35" to="E2.34"></flow>
+    <flow id="0_anomaly_4" type="anomaly" begin="0" end="1000000" probability="0.007" from="-E3.35" to="-E1"></flow>
+    <flow id="1_anomaly_4" type="anomaly" begin="0" end="1000000" probability="0.007" from="-E3.35" to="-E1"></flow>
+    <flow id="0_anomaly_5" type="anomaly" begin="0" end="1000000" probability="0.0025" from="-E3.35" to="-E0"></flow>
+    <flow id="1_anomaly_5" type="anomaly" begin="0" end="1000000" probability="0.0025" from="-E3.35" to="-E0"></flow>     
+
+    <flow id="0_anomaly_6" type="anomaly" begin="0" end="1000000" probability="0.0025" from="-E2.34" to="-E1"></flow>
+    <flow id="1_anomaly_6" type="anomaly" begin="0" end="1000000" probability="0.0025" from="-E2.34" to="-E1"></flow>
+    <flow id="0_anomaly_7" type="anomaly" begin="0" end="1000000" probability="0.007" from="-E2.34" to="-E0"></flow>
+    <flow id="1_anomaly_7" type="anomaly" begin="0" end="1000000" probability="0.007" from="-E2.34" to="-E0"></flow>
+    <flow id="0_anomaly_8" type="anomaly" begin="0" end="1000000" probability="0.0025" from="-E2.34" to="E3.35"></flow>
+    <flow id="1_anomaly_8" type="anomaly" begin="0" end="1000000" probability="0.0025" from="-E2.34" to="E3.35"></flow>
+
+    <flow id="0_anomaly_9" type="anomaly" begin="0" end="1000000" probability="0.0025" from="E1" to="-E0"></flow>
+    <flow id="1_anomaly_9" type="anomaly" begin="0" end="1000000" probability="0.0025" from="E1" to="-E0"></flow>
+    <flow id="0_anomaly_10" type="anomaly" begin="0" end="1000000" probability="0.007" from="E1" to="E3.35"></flow>
+    <flow id="1_anomaly_10" type="anomaly" begin="0" end="1000000" probability="0.007" from="E1" to="E3.35"></flow>
+    <flow id="0_anomaly_11" type="anomaly" begin="0" end="1000000" probability="0.0025" from="E1" to="E2.34"></flow>
+    <flow id="1_anomaly_11" type="anomaly" begin="0" end="1000000" probability="0.0025" from="E1" to="E2.34"></flow> -->
+
+
+</routes>

@@ -1,0 +1,13 @@
+<configuration>
+
+<input>
+<net-file value="ramp_2.net.xml"/>
+<route-files value="ramp_2.rou.xml"/>
+</input>
+
+
+
+
+
+
+</configuration>

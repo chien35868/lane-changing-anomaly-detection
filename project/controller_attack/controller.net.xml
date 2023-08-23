@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2022-08-07 20:59:28 by Eclipse SUMO netedit Version 1.9.2
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="C:\Program%20Files%20(x86)\Eclipse\Sumo\doc\practice\controller_attack\controller.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="C:\Program%20Files%20(x86)\Eclipse\Sumo\doc\practice\controller_attack\controller.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+    </processing>
+
+    <junctions>
+        <no-internal-links value="true"/>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.5"/>
+        <rectangular-lane-cut value="false"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="false"/>
+    </pedestrian>
+
+    <report>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<net version="1.9" junctionCornerDetail="5" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="0.00,0.00" convBoundary="0.00,51.94,300.00,51.94" origBoundary="-10000000000.00,-10000000000.00,10000000000.00,10000000000.00" projParameter="!"/>
+
+    <edge id="gneE3" from="gneJ6" to="gneJ7" priority="-1" spreadType="center">
+        <lane id="gneE3_0" index="0" speed="40.00" length="3000.00" shape="0.00,50.34 300.00,50.34"/>
+        <lane id="gneE3_1" index="1" speed="40.00" length="3000.00" shape="0.00,53.54 300.00,53.54"/>
+    </edge>
+
+    <junction id="gneJ6" type="dead_end" x="0.00" y="51.94" incLanes="" intLanes="" shape="0.00,55.14 0.00,48.74"/>
+    <junction id="gneJ7" type="dead_end" x="300.00" y="51.94" incLanes="gneE3_0 gneE3_1" intLanes="" shape="300.00,48.74 300.00,55.14"/>
+
+</net>

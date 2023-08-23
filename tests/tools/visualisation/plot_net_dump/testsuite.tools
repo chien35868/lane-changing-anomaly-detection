@@ -1,0 +1,17 @@
+# Copy of plain
+plain
+internal
+verbose
+
+# logarithmic colors
+logColors
+multiple_intervals
+
+# test colormap option
+colormap
+
+# empty interval
+missingData
+
+# empty interval
+missingData_logScale

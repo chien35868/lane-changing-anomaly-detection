@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2022-07-07 11:16:39.798740 by netdiff.py v1_13_0+1343-240e5d48340
+  options: source.net.xml dest.net.xml diff
+-->
+
+<nodes version="1.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/nodes_file.xsd">
+    <!-- Deleted Elements -->
+    <!-- Created Elements -->
+    <!-- Changed Elements -->
+    <node id="gneJ0" radius="-1"/>
+    <node id="gneJ1" z="0"/>
+</nodes>

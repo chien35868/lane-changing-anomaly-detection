@@ -1,0 +1,14 @@
+TestFunctions: Netedit opened successfully
+Finding reference
+TestFunctions: 'reference.png' found. Position: 303 - 167
+multiLaneAreaDetector
+TestFunctions: Clicked over position 493 - 417
+TestFunctions: Clicked over position 743 - 417
+TestFunctions: Clicked over position 623 - 417
+dummyPos
+-5
+400
+20
+TestFunctions: Clicked over position 303 - 167
+TestFunctions: Clicked over position 303 - 167
+TestFunctions: Netedit closed successfully

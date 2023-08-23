@@ -1,0 +1,38 @@
+<routes>
+    <vType id="normal"   laneChangeModel="LC2022"  speedDev="0.15" color="0,1,0" decel="5" accel="10"  lccooperative="0" lcKeepRight="0" maxSpeedLat="0.7" sigma="0.5" length="5" />
+    <vType id="anomaly"   laneChangeModel="LC2022"  speedDev="0.15"  color="1,0,0" decel="5" accel="10" lccooperative="0" lcKeepRight="0" maxSpeedLat="0.7" sigma="0.5" length="5" />
+    <!-- <vType id="anomaly"  decel="10" accel="10"  sigma="0.5" length="5" lcSpeedGain="0" lcCooperative="0" lcKeepRight="0" lcAssertive="2"/> -->
+
+    <!--changing car at left(lead/follow)-->
+    <!-- <vehicle id="0" type="anomaly" depart="0" departLane="0"  color="1,0,0">
+        <route edges="gneE3"/>
+    </vehicle>
+    <vehicle id="1" type="normal" depart="0" departLane="1"  color="0,1,0">
+        <route edges="gneE3"/>
+    </vehicle> -->
+
+    <!-- changing car at right(lead/follow)-->
+    <!-- <vehicle id="0" type="anomaly" depart="0" departLane="1"   color="1,0,0">
+        <route edges="gneE3"/>
+    </vehicle>
+    <vehicle id="1" type="normal" depart="0" departLane="0"   color="0,1,0">
+        <route edges="gneE3"/>
+    </vehicle>    -->
+
+    <flow id="0_normal" type="normal" departLane="0" departSpeed="20" begin="0" end="100000" probability="0.13" from="gneE3"></flow>
+    <flow id="1_normal" type="normal" departLane="1" departSpeed="20" begin="0" end="100000" probability="0.13" from="gneE3"></flow>
+    <flow id="2_normal" type="normal" departLane="2" departSpeed="20" begin="0" end="100000" probability="0.13" from="gneE3"></flow>
+    <!-- <flow id="2_normal" type="normal" departLane="2" begin="0" end="1000" probability="0.15" from="gneE0"></flow>
+    <flow id="3_normal" type="normal" departLane="3" begin="0" end="1000" probability="0.15" from="gneE0"></flow> -->
+
+    <flow id="0_anomaly" type="anomaly" departLane="0" departSpeed="20" begin="0" end="100000" probability="0.03" from="gneE3"></flow>
+    <flow id="1_anomaly" type="anomaly" departLane="1" departSpeed="20" begin="0" end="100000" probability="0.03" from="gneE3"></flow>
+    <flow id="2_anomaly" type="anomaly" departLane="2" departSpeed="20" begin="0" end="100000" probability="0.03" from="gneE3"></flow>
+    <!-- <flow id="2_anomaly" type="anomaly" departLane="2" begin="0" end="100000" probability="0.03" from="gneE0"></flow>
+    <flow id="3_anomaly" type="anomaly" departLane="3" begin="0" end="100000" probability="0.03" from="gneE0"></flow> -->
+
+
+    <!-- <vehicle id="2" type="type1" depart="0" departPos="20" departLane="1"   color="1,1,0">
+        <route edges="gneE0"/>
+    </vehicle> -->
+</routes>
